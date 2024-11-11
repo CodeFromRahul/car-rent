@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Racing Sans One";
+  src: url("../asset/Racing_Sans_One/RacingSansOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton {
+  font-family: "Racing Sans One";
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("../asset/Poppins/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: bold;
+}
+.bold {
+  font-family: "Poppins-Bold";
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../asset/Poppins/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f5f5f5;
+}
+.btn1 {
+  background-color: #f5f5f5;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+#scroll {
+  scroll-behavior: smooth;
+}
+body {
+  /* overflow: hidden; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    url("https://images.pexels.com/photos/1559231/pexels-photo-1559231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  /* background: url("../asset/car.jpeg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.go {
+  background: url("../asset/icons8-arrow-64.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.innova {
+  background: url("../asset/innova.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.innova1 {
+  background: url("../asset/innova1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.ertiga {
+  background: url("../asset/ertiga.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.dzire {
+  background: url("../asset/dzire.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.height {
+  height: calc(100vh - 5rem);
+}
+
+.popup-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #fff;
+  padding: 20px;
+  animation: popup-scale 0.3s ease-in-out;
+}
+#dropdown {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate(0px, 80px);
+}
+@keyframes popup-scale {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.popup-icon {
+  background-image: url("../asset/accept.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.popup-animation {
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #0080ff;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the FloatingCallButton */
+.FloatingCallButton {
+  animation: scaleAnimation 2s infinite;
+}
+
+/* If needed, you can apply the animation to the FloatingCallIcon as well */
+.FloatingCallIcon {
+  animation: scaleAnimation 2s infinite;
+}
+
+.Toastify__toast-container{
+  width: 80% !important;
+}
+
+@media (max-width: 768px) {
+  .book {
+    width: 100%;
+  }
+  .Toastify__toast-container{
+    width: 100% !important;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
